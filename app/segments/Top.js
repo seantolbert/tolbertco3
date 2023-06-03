@@ -11,6 +11,7 @@ const Top = () => {
         <div className="flex items-center gap-9 py-10 lg:pl-16">
           {social.map((item, idx) => (
             <a
+              key={idx}
               rel="noopener noreferrer"
               target="_blank"
               href={item.link}
