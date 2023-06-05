@@ -16,12 +16,6 @@ const Top = () => {
     buttons.forEach((button, idx) => {
       gsap.to(button.current, { opacity: 1, delay: 0.5 * (idx + 1) });
     });
-
-    // gsap.to(buttons, {
-    //   onComplete: () => {
-    //     gsap.set(buttons, { opacity: 1 });
-    //   },
-    // });
   }, []);
 
   return (
@@ -31,8 +25,8 @@ const Top = () => {
     >
       <Clock />
       <div className="px-5 w-full lg:w-2/3 z-[10]">
-        {/* <div className="absolute w-1/2 h-full bg-black border"></div> */}
-        <p className=" lg:p-16 text-6xl appear">Hey, I'm Sean</p>
+        
+        <p className="lg:p-16 text-6xl appear">Hey, I'm Sean</p>
 
         <div className="flex items-center gap-9 py-10 lg:pl-16">
           {social.map((item, idx) => {
