@@ -20,7 +20,7 @@ const AnimatedBar = () => {
         repeat: -1,
         yoyo: true,
         ease: "power1.inOut",
-        duration: 4,
+        duration: 3.5,
         stagger: 0.3,
         delay: 1,
       }
@@ -29,7 +29,7 @@ const AnimatedBar = () => {
       opacity: 1,
       ease: "power1.inOut",
       duration: 4,
-      stagger: 0.3,
+      stagger: 0.5,
     });
   }, []);
 

@@ -14,7 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth bg-black ">
-      <body className={[inter.className, "bg-black text-white"]}>
+      <body
+        className={[
+          inter.className,
+          "bg-black text-white flex flex-col items-center",
+        ]}
+      >
         <Toaster position="bottom-right" />
         {children}
         <Footer />
